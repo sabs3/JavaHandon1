@@ -25,12 +25,14 @@ public class Main {
 			arrayofMarks[i] = subject;
 			System.out.println(student + " got " + grade.getComment() + " grade for subject " + (i+1));
 			}
+		
 		for (i =0; i<numberofSub; i++) {
 			average =average+arrayofMarks[i];
 			}
+		
 		average = average/100;
 		StudentMark avegrade = new StudentMark(average);
-		System.out.println("The average is" + " : " + avegrade.getComment());
+		System.out.println("The average grade is" + " : " + avegrade.getComment());
 	}	
 
 }
